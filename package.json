@@ -1,0 +1,31 @@
+{
+  "name": "derbytoolstandalone",
+  "version": "1.0.0",
+  "description": "Old School MTG - Derby Tournament Manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx electron .",
+    "packwin": "npx electron-packager . DerbyTool --platform=win32 --arch=x64",
+    "packmac": "npx electron-packager . DerbyTool --platform=darwin --arch=x64,arm64 --overwrite",
+    "dist": "npx electron-builder"
+  },
+  "keywords": [
+    "mtg",
+    "tournament",
+    "management",
+    "swiss",
+    "batch"
+  ],
+  "author": "Slanfan Dahlroth",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "qrcode": "^1.5.4",
+    "ws": "^8.18.0"
+  },
+    "devDependencies": {
+    "electron": "^32.0.1",
+    "electron-builder": "^25.0.5",
+    "electron-packager": "^17.1.2"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    button {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #qrcode {
+      margin-bottom: 10px;
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <button id="open-admin-btn">Open Admin Panel</button>
+  <img id="qrcode" alt="QR Code">
+  <div>Scan the QR code to open the client: <span id="client-url"></span></div>
+</body>
+</html>
